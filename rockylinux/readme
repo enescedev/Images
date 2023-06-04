@@ -1,0 +1,6 @@
+dotnet new console -o MyApp
+
+cd MyApp
+
+ls -ltr
+
