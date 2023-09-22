@@ -1,5 +1,5 @@
 
-FROM mcr.microsoft.com/powershell:7.1.5-ubuntu-20.04
+FROM mcr.microsoft.com/powershell:7.1.5-ubuntu-22.04
 
 ENV TERM=xterm \
     TZ="Europe/Istanbul" 
@@ -39,7 +39,7 @@ RUN yarn --production && \
     yarn autoclean --force && \
     yarn cache clean
 
-FROM mcr.microsoft.com/powershell:7.1.5-ubuntu-20.04
+FROM mcr.microsoft.com/powershell:7.1.5-ubuntu-22.04
 
 # Install Node.js, Yarn and required dependencies
 RUN apt-get update
